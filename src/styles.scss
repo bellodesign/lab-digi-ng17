@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@digi/arbetsformedlingen/dist/digi-arbetsformedlingen/digi-arbetsformedlingen.css';
+@import '@digi/arbetsformedlingen/dist/digi-arbetsformedlingen/fonts/src/fonts.css';
+
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.form-layout {
+  digi-form-input,
+  digi-form-textarea,
+  digi-form-select,
+  digi-form-select-filter {
+    display: block;
+    margin-bottom: var(--digi--margin--medium);
+  }
+}
+.form-buttons {
+  display: flex;
+  gap: var(--digi--padding--medium);
+  margin-top: var(--digi--margin--large);
+}

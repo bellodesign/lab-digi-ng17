@@ -1,0 +1,21 @@
+<digi-layout-block afVerticalPadding="true">
+  <digi-typography-heading-jumbo afText="Datepicker"></digi-typography-heading-jumbo>
+
+  <form [formGroup]="myForm" class="my-form" id="myForm">
+    <div class="form-values">
+      <pre>myForm.value: {{ myForm.value | json }}</pre>
+    </div>
+
+    <digi-calendar-datepicker 
+      af-id="myDate" 
+      af-name="myDate" 
+      formArrayName="myDate"
+      (afOnDateChange)="onDateChange($event)"
+      [afSelectedDates]="setSelectedDate(myForm.controls['myDate'].value)"
+    ></digi-calendar-datepicker>
+
+    <div class="submit-wrapper">
+      <digi-button (afOnClick)="submitButtonHandler()">Skicka in ansökan</digi-button>
+    </div>
+  </form>
+</digi-layout-block>

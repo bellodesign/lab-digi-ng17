@@ -1,0 +1,16 @@
+.form-values {
+    position: absolute;
+    right: var(--digi--margin--large);
+    bottom: var(--digi--margin--large);
+    padding: var(--digi--padding--large);
+    background-color: var(--digi--color--background--primary);
+    box-shadow: 1px 1px 15px 0 rgba(0,0,0,.4);
+}
+
+form {
+    margin-top: var(--digi--margin--large);
+}
+
+.submit-wrapper {
+    margin-top: var(--digi--margin--large);
+}
